@@ -1,0 +1,33 @@
+.embedContainer {
+  margin: 0 auto 1.5rem auto;
+  overflow: visible;
+  width: 100%;
+  clear: right;
+  box-sizing: border-box;
+
+  &.right,
+  &.full {
+    border: 1px solid #e6e6e6;
+    padding: 1rem;
+  }
+
+  @media (min-width: 34em) {
+    &.right {
+      float: right;
+      margin-right: 1.5rem;
+      width: 45%;
+    }
+  }
+
+  @media (min-width: 62em) {
+    &.full {
+      width: auto;
+      transform: translateX(-2rem);
+      margin-right: -4rem;
+    }
+    &.right {
+      width: 50%;
+      margin-right: -2rem;
+    }
+  }
+}
