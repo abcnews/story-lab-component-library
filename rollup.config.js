@@ -1,7 +1,6 @@
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import resolve from "rollup-plugin-node-resolve";
 import typescript from "rollup-plugin-typescript2";
-// import sass from "rollup-plugin-sass";
 import commonjs from "rollup-plugin-commonjs";
 import postcss from "rollup-plugin-postcss";
 import pkg from "./package.json";
@@ -12,13 +11,13 @@ export default {
     {
       file: pkg.main,
       format: "cjs",
-      sourcemap: true
+      sourcemap: true,
     },
     {
       file: pkg.module,
       format: "esm",
-      sourcemap: true
-    }
+      sourcemap: true,
+    },
   ],
   plugins: [
     peerDepsExternal(),
@@ -26,10 +25,10 @@ export default {
       extract: false,
       modules: true,
       namedExports: true,
-      use: ["sass"]
+      use: ["sass"],
     }),
     resolve(),
     commonjs(),
-    typescript({ useTsconfigDeclarationDir: true })
-  ]
+    typescript({ useTsconfigDeclarationDir: true }),
+  ],
 };
