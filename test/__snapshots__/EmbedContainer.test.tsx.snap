@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmbedContainer Component renders default correctly 1`] = `
+<aside
+  className="embedContainer"
+>
+  Content
+</aside>
+`;
+
+exports[`EmbedContainer Component renders full correctly 1`] = `
+<aside
+  className="embedContainer full"
+>
+  Content
+</aside>
+`;
+
+exports[`EmbedContainer Component renders right correctly 1`] = `
+<aside
+  className="embedContainer right"
+>
+  Content
+</aside>
+`;
