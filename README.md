@@ -2,13 +2,15 @@
 
 A collection of reusable React components for use in Story Lab ... stories.
 
-## Installation
+## Usage
 
 ```bash
 npm install @abcnews/story-lab-component-library
 ```
 
 This library is in its infancy and is barely documented or even useful.
+
+You can see all available components in [the storybook](https://abcnews.github.io/story-lab-component-library/)
 
 ## Development
 
@@ -48,4 +50,10 @@ Releases are built and deployed using [np](https://github.com/sindresorhus/np).
 
 ```
 npm run release
+```
+
+If you're deploying a new production release, you should also update the Storybook. The following command will freshly build and deploy it to GitHub pages.
+
+```
+npm run deploy-storybook
 ```
