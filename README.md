@@ -1,3 +1,6 @@
+> [!NOTE]
+> See <https://github.com/abcnews/components-storylab>
+
 # Story Lab component library
 
 A collection of reusable React components for use in Story Lab ... stories.
